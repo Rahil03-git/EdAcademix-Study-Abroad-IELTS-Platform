@@ -1,0 +1,28 @@
+# ---- Secrets: NEVER commit these ----
+Tests/config.local.php
+*.local.php
+.env
+Tests/.env
+
+# ---- Uploaded personal documents and generated certificates: NEVER commit ----
+Offer Letter/*
+!Offer Letter/.gitkeep
+certificate/*
+!certificate/.gitkeep
+
+# ---- Course videos: large files, kept outside Git (see Videos/README.md) ----
+Videos/*
+!Videos/README.md
+!Videos/.gitkeep
+
+# ---- Composer (restore with "composer install" if ever needed) ----
+vendor/
+composer.phar
+
+# ---- Editors, OS files, logs ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.bak
